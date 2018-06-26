@@ -14,8 +14,21 @@ body {
 
 .container {
   width: 100%;
+ 
   max-width: 960px;
   margin: 0 auto;
+  clear: both;
+}
+
+#navbrandContainer {
+  padding: 0; 
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
   clear: both;
 }
 
@@ -63,7 +76,7 @@ h3 {
   border-bottom: 2px solid #ccc;
 }
 
-#logo {
+/* #logo {
   float: left;
   width: 250px;
   height: 90px;
@@ -75,7 +88,7 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
-}
+} */
 
 
 
@@ -102,8 +115,15 @@ nav a {
   border: 0;
 }
 
-.navbar-brand {
+.navbar-light .navbar-brand {
+  color: #ffffff;
   background-color: #4aaaa5;
+}
+
+.navbar-brand {
+  min-height: 50px;
+  /* min-height: 50px; */
+  /* background-color: #4aaaa5; */
   color: #ffffff;
   height: 100%;
   min-width: 200px;
@@ -111,6 +131,7 @@ nav a {
   padding: 0;
   margin: 0;
   text-align: center;
+  vertical-align: middle;
 }
 
 nav a:first-child {
